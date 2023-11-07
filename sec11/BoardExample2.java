@@ -31,10 +31,10 @@ public class BoardExample2 {
 		System.out.println();
 		
 		switch(menuNo) {
-			case "1" -> create();
-			case "2" -> read();
-			case "3" -> clear();
-			case "4" -> exit();
+			case "1" : create();
+			case "2" : read();
+			case "3" : clear();
+			case "4" : exit();
 		}
 	}	
 	

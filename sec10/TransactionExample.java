@@ -41,13 +41,13 @@ public class TransactionExample {
 				if(rows2 == 0) throw new Exception("입금되지 않았음");
 				pstmt2.close();
 			
-				//커밋 -> 모두 성공 처리
+				//커밋 : 모두 성공 처리
 				conn.commit();
 				System.out.println("계좌 이체 성공");	
 			//트랜잭션 종료 ----------------------------------------------------
 		} catch (Exception e) {
 			try { 
-				//롤백 -> 모두 실패 처리
+				//롤백 : 모두 실패 처리
 				conn.rollback(); 
 				//원래대로 자동 커밋 기능 켜기
 				conn.setAutoCommit(true);	
