@@ -17,9 +17,9 @@ public class BoardInsertExample {
 			
 			//연결하기
 			conn = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/thisisjava", 
-				"java", 
-				"mysql"
+				"jdbc:mysql://localhost:3306/songjunhyung", 
+				"root", 
+				"Song9520!!"
 			);
 			
 			//매개변수화된 SQL문 작성
@@ -34,7 +34,7 @@ public class BoardInsertExample {
 			pstmt.setString(2, "함박눈이 내려요.");
 			pstmt.setString(3, "winter");
 			pstmt.setString(4, "snow.jpg");
-			pstmt.setBlob(5, new FileInputStream("src/ch20/mysql/sec06/snow.jpg"));
+			pstmt.setBlob(5, new FileInputStream("C:/Users/kitri/Downloads/mysql/sec06/snow.jpg"));
 			
 			//SQL문 실행
 			int rows = pstmt.executeUpdate();
@@ -49,7 +49,6 @@ public class BoardInsertExample {
 				}
 				rs.close();
 			}
-			
 			//PreparedStatement 닫기
 			pstmt.close();
 		} catch (Exception e) {

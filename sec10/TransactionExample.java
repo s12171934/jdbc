@@ -14,9 +14,9 @@ public class TransactionExample {
 			
 			//연결하기
 			conn = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/thisisjava", 
-				"java", 
-				"mysql"
+				"jdbc:mysql://localhost:3306/songjunhyung", 
+				"root", 
+				"Song9520!!"
 			);
 			
 			//트랜잭션 시작 ----------------------------------------------------

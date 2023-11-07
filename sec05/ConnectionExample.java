@@ -13,9 +13,9 @@ public class ConnectionExample {
 			
 			//연결하기
 			conn = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/thisisjava", 
-				"java", 
-				"mysql"
+				"jdbc:mysql://127.0.0.1:3306/songjunhyung",
+				"root",
+				"Song9520!!"
 			);	
 			
 			System.out.println("연결 성공");

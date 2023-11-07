@@ -15,9 +15,9 @@ public class UserSelectExample {
 			
 			//연결하기
 			conn = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/thisisjava", 
-				"java", 
-				"mysql"
+				"jdbc:mysql://localhost:3306/songjunhyung", 
+				"root", 
+				"Song9520!!"
 			);	
 			
 			//매개변수화된 SQL문 작성

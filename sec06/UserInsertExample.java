@@ -14,9 +14,9 @@ public class UserInsertExample {
 			
 			//연결하기
 			conn = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/thisisjava", 
-				"java", 
-				"mysql"
+				"jdbc:mysql://localhost:3306/songjunhyung", 
+				"root", 
+				"Song9520!!"
 			);	
 			
 			//매개변수화된 SQL문 작성
@@ -35,7 +35,6 @@ public class UserInsertExample {
 			//SQL문 실행
 			int rows = pstmt.executeUpdate();
 			System.out.println("저장된 행 수: " + rows);
-			
 			//PreparedStatement 닫기
 			pstmt.close();
 		} catch (ClassNotFoundException e) {

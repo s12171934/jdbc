@@ -20,9 +20,9 @@ public class BoardExample9 {
 			
 			//연결하기
 			conn = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/thisisjava", 
-				"java", 
-				"mysql"
+				"jdbc:mysql://localhost:3306/songjunhyung", 
+				"root", 
+				"Song9520!!"
 			);
 		} catch(Exception e) {
 			e.printStackTrace();
